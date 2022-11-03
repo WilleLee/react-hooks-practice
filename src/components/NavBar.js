@@ -5,6 +5,9 @@ const NavBar = () => {
         <li>
           <a href={`hooks/use-state`}>useState</a>
         </li>
+        <li>
+          <a href={`hooks/use-input`}>useInput</a>
+        </li>
       </ul>
     </nav>
   );
