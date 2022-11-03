@@ -11,6 +11,9 @@ const NavBar = () => {
         <li>
           <a href={`hooks/use-tabs`}>useTabs</a>
         </li>
+        <li>
+          <a href={`use-zustand`}>useZustand</a>
+        </li>
       </ul>
     </nav>
   );
