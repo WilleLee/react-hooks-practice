@@ -8,6 +8,9 @@ const NavBar = () => {
         <li>
           <a href={`hooks/use-input`}>useInput</a>
         </li>
+        <li>
+          <a href={`hooks/use-tabs`}>useTabs</a>
+        </li>
       </ul>
     </nav>
   );
