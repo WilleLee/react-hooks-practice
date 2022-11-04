@@ -1,6 +1,8 @@
+import Nav from "../styledComponents/Nav";
+
 const NavBar = () => {
   return (
-    <nav>
+    <Nav>
       <ul>
         <li>
           <a href={`/`}>Home</a>
@@ -42,7 +44,7 @@ const NavBar = () => {
           <a href={`/use-zustand`}>useZustand</a>
         </li>
       </ul>
-    </nav>
+    </Nav>
   );
 };
 
