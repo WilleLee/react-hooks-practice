@@ -24,6 +24,15 @@ const NavBar = () => {
           <a href={`/hooks/use-click`}>useClick</a>
         </li>
         <li>
+          <a href={`/hooks/use-confirm`}>useConfirm</a>
+        </li>
+        <li>
+          <a href={`/hooks/use-prevent-leave`}>usePreventLeave</a>
+        </li>
+        <li>
+          <a href={`/hooks/use-page-leave`}>usePageLeave</a>
+        </li>
+        <li>
           <a href={`/use-zustand`}>useZustand</a>
         </li>
       </ul>

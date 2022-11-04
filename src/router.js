@@ -1,8 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./routes/Home";
 import UseClickHook from "./routes/UseClickHook";
+import UseConfirmHook from "./routes/UseConfirmHook";
 import UseEffectHook from "./routes/UseEffectHook";
 import UseInputHook from "./routes/UseInputHook";
+import UsePageLeaveHook from "./routes/UsePageLeaveHook";
+import UsePreventLeaveHook from "./routes/UsePreventLeaveHook";
 import UseStateHook from "./routes/UseStateHook";
 import UseTabsHook from "./routes/UseTabsHook";
 import UseTitleHook from "./routes/UseTitleHook";
@@ -16,6 +19,9 @@ const router = createBrowserRouter([
   { path: "/hooks/use-effect", element: <UseEffectHook /> },
   { path: "/hooks/use-title", element: <UseTitleHook /> },
   { path: "/hooks/use-click", element: <UseClickHook /> },
+  { path: "/hooks/use-confirm", element: <UseConfirmHook /> },
+  { path: "/hooks/use-prevent-leave", element: <UsePreventLeaveHook /> },
+  { path: "/hooks/use-page-leave", element: <UsePageLeaveHook /> },
   { path: "/use-zustand", element: <UseZustand /> },
 ]);
 
