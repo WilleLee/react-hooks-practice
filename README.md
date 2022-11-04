@@ -67,3 +67,42 @@ export const useBearStore = create((set) => ({
 ```
 
 Important thing is that the dispatch method must return the next value regarding all the possible conditionals. If, for instance, _the incrementBear_ dispatch does not define any value on the case that the current _state.bear_ is larger than or equals to 10, the system does not thorw any default value implicitly, but an unfavourable error.
+
+Since the _useBearStore_ is exported from the _store.js_, it is possible to import the store separtely to appropriate components. While each of thoses states and dispatches could be called outside individually, I would've liked to have them altogether into the same component, which could be done using the _shallow_ opiton of the zustand module like below.
+
+```javascript
+// ./src/rotues/UseZustand.js
+import shallow from "zustand/shallow";
+import { useBearStore } from "../store";
+
+const UseZustand = () => {
+  const { bear, incrementBear, decrementBear } = useBearStore(
+    (state) => ({
+      bear: state.bear,
+      incrementBear: state.incrementBear,
+      decrementBear: state.decrementBear,
+    }),
+    shallow
+  );
+  return (
+    <section>
+      <h1>Zustand Tutorials</h1>
+      <p>
+        you now have {bear === 0 ? "no" : bear} {bear > 1 ? "bears" : "bear"}
+      </p>
+      <div className="btns">
+        <button onClick={incrementBear}>add a bear</button>
+        <button onClick={decrementBear}>remove a bear</button>
+      </div>
+    </section>
+  );
+};
+
+export default UseZustand;
+```
+
+Like above, only by sending shallow as an argument, all the states and dispatches of the same store can be implemented to the componented and utilized.
+
+## React-Router-Dom v6.4.3
+
+React-router-dom is now much simpler.
