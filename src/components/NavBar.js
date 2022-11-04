@@ -3,16 +3,19 @@ const NavBar = () => {
     <nav>
       <ul>
         <li>
-          <a href={`hooks/use-state`}>useState</a>
+          <a href={`/`}>Home</a>
         </li>
         <li>
-          <a href={`hooks/use-input`}>useInput</a>
+          <a href={`/hooks/use-state`}>useState</a>
         </li>
         <li>
-          <a href={`hooks/use-tabs`}>useTabs</a>
+          <a href={`/hooks/use-input`}>useInput</a>
         </li>
         <li>
-          <a href={`use-zustand`}>useZustand</a>
+          <a href={`/hooks/use-tabs`}>useTabs</a>
+        </li>
+        <li>
+          <a href={`/use-zustand`}>useZustand</a>
         </li>
       </ul>
     </nav>

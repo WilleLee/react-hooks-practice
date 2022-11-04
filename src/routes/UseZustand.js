@@ -12,9 +12,9 @@ const UseZustand = () => {
   );
   return (
     <section>
-      <h1>zustand</h1>
+      <h1>Zustand Tutorials</h1>
       <p>
-        you now have {bear} {bear > 1 ? "bears" : "bear"}
+        you now have {bear === 0 ? "no" : bear} {bear > 1 ? "bears" : "bear"}
       </p>
       <div className="btns">
         <button onClick={incrementBear}>add a bear</button>
