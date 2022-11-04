@@ -3,7 +3,9 @@ import Home from "./routes/Home";
 import UseClickHook from "./routes/UseClickHook";
 import UseConfirmHook from "./routes/UseConfirmHook";
 import UseEffectHook from "./routes/UseEffectHook";
+import UseFadeinHook from "./routes/UseFadeinHook";
 import UseInputHook from "./routes/UseInputHook";
+import UseNetworkHook from "./routes/UseNetworkHook";
 import UsePageLeaveHook from "./routes/UsePageLeaveHook";
 import UsePreventLeaveHook from "./routes/UsePreventLeaveHook";
 import UseStateHook from "./routes/UseStateHook";
@@ -22,6 +24,8 @@ const router = createBrowserRouter([
   { path: "/hooks/use-confirm", element: <UseConfirmHook /> },
   { path: "/hooks/use-prevent-leave", element: <UsePreventLeaveHook /> },
   { path: "/hooks/use-page-leave", element: <UsePageLeaveHook /> },
+  { path: "/hooks/use-fadein", element: <UseFadeinHook /> },
+  { path: "/hooks/use-network", element: <UseNetworkHook /> },
   { path: "/use-zustand", element: <UseZustand /> },
 ]);
 

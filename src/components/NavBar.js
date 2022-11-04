@@ -33,6 +33,12 @@ const NavBar = () => {
           <a href={`/hooks/use-page-leave`}>usePageLeave</a>
         </li>
         <li>
+          <a href={`/hooks/use-fadein`}>useFadein</a>
+        </li>
+        <li>
+          <a href={`/hooks/use-network`}>useNetwork</a>
+        </li>
+        <li>
           <a href={`/use-zustand`}>useZustand</a>
         </li>
       </ul>
