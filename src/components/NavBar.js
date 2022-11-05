@@ -47,6 +47,9 @@ const NavBar = () => {
           <a href={`/hooks/use-fullscreen`}>useFullscreen</a>
         </li>
         <li>
+          <a href={`/hooks/use-axios`}>useAxios</a>
+        </li>
+        <li>
           <a href={`/use-zustand`}>useZustand</a>
         </li>
       </ul>

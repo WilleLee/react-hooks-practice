@@ -14,6 +14,7 @@ import UseStateHook from "./routes/UseStateHook";
 import UseTabsHook from "./routes/UseTabsHook";
 import UseTitleHook from "./routes/UseTitleHook";
 import UseZustand from "./routes/UseZustand";
+import UseAxiosHook from "./routes/UseAxiosHook";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
   { path: "/hooks/use-network", element: <UseNetworkHook /> },
   { path: "/hooks/use-scroll", element: <UseScrollHook /> },
   { path: "/hooks/use-fullscreen", element: <UseFullscreenHook /> },
+  { path: "/hooks/use-axios", element: <UseAxiosHook /> },
   { path: "/use-zustand", element: <UseZustand /> },
 ]);
 
