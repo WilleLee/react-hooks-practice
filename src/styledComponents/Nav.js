@@ -15,7 +15,9 @@ const Nav = styled.nav`
   a {
     text-decoration: none;
   }
-  a:visited {
+  a,
+  a:visited,
+  a:focus {
     color: inherit;
   }
   a:hover {

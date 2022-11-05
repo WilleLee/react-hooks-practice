@@ -41,6 +41,12 @@ const NavBar = () => {
           <a href={`/hooks/use-network`}>useNetwork</a>
         </li>
         <li>
+          <a href={`/hooks/use-scroll`}>useScroll</a>
+        </li>
+        <li>
+          <a href={`/hooks/use-fullscreen`}>useFullscreen</a>
+        </li>
+        <li>
           <a href={`/use-zustand`}>useZustand</a>
         </li>
       </ul>
