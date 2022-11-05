@@ -106,3 +106,62 @@ Like above, only by sending shallow as an argument, all the states and dispatche
 ## React-Router-Dom v6.4.3
 
 React-router-dom is now much simpler.
+
+First thing to do to use react-router-dom on your project is to install the module using npm.
+
+```
+npm install react-router-dom
+```
+
+Secondly, create _RouterProvider_ component on the top-level of all route components. I, for example, added the _RouterProvider_ on _App.js_ next to _NavBar_ so that all the routes could show the _NavBar_ component.
+
+```javascript
+// ./src/App.js
+import { RouterProvider } from "react-router-dom";
+import NavBar from "./components/NavBar";
+
+const App = () => {
+  return (
+    <main>
+      <NavBar />
+      <RouterProvider />
+    </main>
+  );
+};
+
+export default App;
+```
+
+And here's the thing. RouterProvider component must receive router as its prop, which contains all the information of which routes of this project. Creating a separate file called _router.js_ to manage those routes would be more efficient than have them together with the real component code. Once you state routes the project need using _createBrowserRouter_ method of the _react-router-dom_ module, those should imported to the _App.js_ in this case and sent as prop to the _RouterProvider_.
+
+```javascript
+// ./src/router.js
+import { createBrowserRouter } from "react-router-dom";
+import Home from "./routes/Home";
+
+const router = createBrowserRouter([
+  { path: "/", element: <Home /> }
+]);
+
+export default router;
+```
+
+```javascript
+// ./src/App.js
+import { RouterProvider } from "react-router-dom";
+import NavBar from "./components/NavBar";
+import router from "./router";
+
+const App = () => {
+  return (
+    <main>
+      <NavBar />
+      <RouterProvider router={router} />
+    </main>
+  );
+};
+
+export default App;
+```
+
+Now it is possible to make paths and elements as many as needed on the _router.js_.
