@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "author": "Wille Lee <1992season@gmail.com>",
+  "keywords": [
+    "react",
+    "react hooks",
+    "react router dom",
+    "styled components"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
